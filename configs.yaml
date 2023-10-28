@@ -1,0 +1,24 @@
+defaults:
+
+  logroot: logs
+  expname: name
+  logdir: ""
+  tboarddir: ""
+  datadir: ""
+  seed: 0
+  task: dummy_disc
+  wrapper: {length: 0, repeat: 1, reset: True, discretize: 0, checks: False, delta: '^$'}
+  env:
+    dm: {size: [64, 64], camera: -1}
+
+gym_mtc:
+  task: gym_mtc
+  wrapper: {length: 100, repeat: 2}
+
+dm_walk:
+  task: dm_walker_walk
+  wrapper: {length: 500, repeat: 2}
+
+
+
+
